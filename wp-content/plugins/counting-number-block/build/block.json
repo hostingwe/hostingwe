@@ -1,0 +1,112 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "boldblocks/counting-number",
+  "title": "Counting number block",
+  "category": "design",
+  "description": "An animated number counting effect block.",
+  "keywords": [
+    "number",
+    "counting",
+    "counter",
+    "animation"
+  ],
+  "attributes": {
+    "value": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-boldblocks-counting-number > .value",
+      "attribute": "data-value"
+    },
+    "startVal": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-boldblocks-counting-number > .value",
+      "attribute": "data-start-val"
+    },
+    "duration": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-boldblocks-counting-number > .value",
+      "attribute": "data-duration",
+      "default": 2
+    },
+    "enableScrollSpy": {
+      "type": "boolean",
+      "default": true
+    },
+    "scrollSpyOnce": {
+      "type": "boolean",
+      "default": true
+    },
+    "scrollSpyDelay": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-boldblocks-counting-number > .value",
+      "attribute": "data-scroll-spy-delay",
+      "default": 0
+    },
+    "disableGrouping": {
+      "type": "boolean",
+      "default": false
+    },
+    "separator": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-boldblocks-counting-number > .value",
+      "attribute": "data-separator",
+      "default": ","
+    },
+    "decimal": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".wp-block-boldblocks-counting-number > .value",
+      "attribute": "data-decimal",
+      "default": "."
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "color": {
+      "background": true,
+      "text": true,
+      "gradients": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true,
+        "lineHeight": true,
+        "fontAppearance": true,
+        "textTransform": true
+      }
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": false
+    }
+  },
+  "textdomain": "counting-number-block",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./frontend.js"
+}
